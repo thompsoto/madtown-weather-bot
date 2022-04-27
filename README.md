@@ -1,5 +1,5 @@
 # madtown-weather-bot
-A Twitter bot that provides daily weather information for Madison, Wisconsin [(@MadtownWeather)](https://twitter.com/MadtownWeather).
+A Twitter bot that provides daily weather information for Madison, Wisconsin ([@MadtownWeather](https://twitter.com/MadtownWeather)).
 
 Makes use of the [Tweepy](https://docs.tweepy.org/en/stable/) package (Version 4.8.0) to access the Twitter API and the [OpenWeather API](https://openweathermap.org/) to extract precise weather information. Uses a cron job for timely updates.
 
