@@ -1,10 +1,11 @@
 import datetime as dt
 import requests
+import os
 
 def kelvin_to_fahrenheit(kelvin):
     return int(round((kelvin - 273.15) * (9/5) + 32, 0))
 
-weather_key = open('weatherkey.txt', 'r').read()
+weather_key = open(os.path.abspath('weatherkey.txt'), 'r').read()
 url = "https://api.openweathermap.org/data/2.5/weather?q=Madison,wi,us&appid=" + weather_key
 data = requests.get(url).json()
 

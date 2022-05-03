@@ -1,7 +1,8 @@
 import tweepy
 import weather
+import os
 
-all_keys = open('tweepykeys.txt', 'r').read().splitlines()
+all_keys = open(os.path.abspath('tweepykeys.txt'), 'r').read().splitlines()
 api_key = all_keys[0]
 api_key_secret = all_keys[1]
 access_token = all_keys[2]
